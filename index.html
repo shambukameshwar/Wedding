@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,6 +23,14 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+	
+	<script>
+		function postYourMap () {
+    var iframe = $("#forPostyouradd");
+    iframe.attr("src", iframe.data("src")); 
+}
+	</script>
+	
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -281,7 +290,12 @@
 	        			<p><span>March, 14, 2020</span><br><span>6:00 PM Onwards</span></p>
 	        			<p><span>S.S.P Bhavana Mahal, Near varadharaja perumal temple, Kanchipuram</span></p>
 	        			<p><a href="#">+91 8680998720</a></p>
-	        			<p><a href="#" class="btn-custom">See Map</a></p>
+	        			<p><a href="#" class="btn-custom" onclick="postYourMap()">See Map</a></p>
+						
+						<!--<iframe id="forPostyouradd" data-src="http://www.w3schools.com" src="about:blank" width="200" height="200" style="background:#ffffff"></iframe>-->
+						
+						<iframe id="forPostyouradd" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.2848326218154!2d78.14605941405891!3d9.91021869291275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c5a3fc1379e7%3A0xc36747206c1e0df8!2stheppakulam!5e0!3m2!1sen!2sin!4v1578641060702!5m2!1sen!2sin" src="about:blank" width="600" height="450" frameborder="0" style="border:0;" ></iframe>
+						
 	        		</div>
         		</div>
         	</div>
